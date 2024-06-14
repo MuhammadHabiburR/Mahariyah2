@@ -73,7 +73,7 @@ void loop() {
           // Baca suhu 
           float f = dht.readTemperature(true);
           // Periksa apakah ada yang membaca gagal dan keluar lebih awal 
-          if (isnan(h) || isnan(t) || isnan(f)) {
+          if (isnan(h) || isnan(t)  {
             Serial.println("Failed to read from DHT sensor!");
           } else {
             Serial.print("Kelembaban : ");
